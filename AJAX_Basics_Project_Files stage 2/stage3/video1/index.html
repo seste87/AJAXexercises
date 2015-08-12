@@ -6,25 +6,7 @@
   <link rel="stylesheet" href="css/main.css">
   <title>AJAX with JavaScript</title>
   <script>
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'sideba.html');
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-      if (xhr.status == 200) {
-        document.getElementById('ajax').innerHTML = xhr.responseText;
-        } else if (xhr.status === 404) {
-          alert(xhr.statusText);
-        } else {
-          alert(xhr.statusText);
-        }
-      
-    }
-  };
 
-  function sendAJAX() {
-    xhr.send();
-    document.getElementById('load').style.display = 'none';
-  }
   </script>
 </head>
 <body>
